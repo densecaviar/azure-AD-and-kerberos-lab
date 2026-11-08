@@ -47,7 +47,7 @@ This follows the zero-trust and least-privilege principles used in real
 enterprise network design, rather than granting every machine the same
 level of network access by default.
 
-**Evidence:** ![vnet-subs](images/01-02-vnet-subnets.png) — the virtual network's
+**Evidence:** ![vnet-subs](/images/01-02-vnet-subnets.png) — the virtual network's
 Subnets blade showing all three ranges.
 
 ## Step 3 — Create and associate a Network Security Group per subnet
@@ -72,7 +72,7 @@ which no host is ever reachable from the public internet, which is stated
 explicitly here because it is a verifiable architectural decision, not an
 assumption.
 
-**Evidence:** 📸 `images/01-03-nsg-associations.png` — the resource group's
+**Evidence:**  ![network security groups ](/images/01-03-nsg-associations.png) — the resource group's
 resource list showing all three NSGs, or individual screenshots of each
 NSG's Subnets blade confirming its association.
 
