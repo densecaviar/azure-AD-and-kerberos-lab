@@ -20,8 +20,6 @@ endpoints, and monitoring systems.
 resource in the lab, allowing the entire environment to be managed,
 monitored, and (if needed) torn down as a single unit.
 
-**Evidence:**  ![resource group](images/01-01-resource-group-created.png) — the resource
-group's Overview blade immediately after creation.
 
 ## Step 2 — Create the virtual network and subnets
 
@@ -49,7 +47,7 @@ This follows the zero-trust and least-privilege principles used in real
 enterprise network design, rather than granting every machine the same
 level of network access by default.
 
-**Evidence:** 📸 `images/01-02-vnet-subnets.png` — the virtual network's
+**Evidence:** ![vnet-subs](images/01-02-vnet-subnets.png) — the virtual network's
 Subnets blade showing all three ranges.
 
 ## Step 3 — Create and associate a Network Security Group per subnet
