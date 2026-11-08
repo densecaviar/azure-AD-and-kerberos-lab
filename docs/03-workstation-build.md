@@ -22,7 +22,7 @@ configuration against dc01, and join it to the `enterprise.local` domain.
 | NIC network security group | None (relies on subnet-level `nsg-client`) | avoids duplicate rule sets |
 | Auto-shutdown | Enabled, daily | protects remaining Azure credit |
 
-**Evidence:** 📸 `images/03-01-winclient-create-review.png`
+
 
 ## Step 2 — Verify and correct DNS configuration
 
@@ -59,7 +59,6 @@ interface.
 Resolve-DnsName -Name enterprise.local
 ```
 
-**Evidence:** 📸 `images/03-02-dns-server-check.png`
 
 ## Step 3 — Join win-client01 to the domain
 
@@ -83,7 +82,6 @@ behavior observed during dc01's promotion in Phase 2. The actual result
 must be confirmed independently after the reboot, not assumed from the Run
 Command output alone.
 
-**Evidence:** 📸 `images/03-03-domain-join-result.png`
 
 ## Step 4 — Confirm the join
 
@@ -95,7 +93,8 @@ Get-ComputerInfo | Select-Object CsDomain, CsPartOfDomain
 
 **Result:** `CsDomain: enterprise.local`, `CsPartOfDomain: True` — confirmed.
 
-**Evidence:** 📸 `images/03-04-domain-confirmed.png`
+**Evidence:**
+![domain confirmed](/images/03-04-domain-confirmed.png)
 
 ## Outcome
 
