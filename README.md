@@ -3,12 +3,8 @@
 A self-built Azure environment demonstrating core enterprise identity
 infrastructure: network segmentation, a promoted Active Directory domain
 controller, a domain-joined Windows client, and a real, captured Kerberos
-authentication cycle — correlated against the matching Windows Security
+authentication cycle correlated against the matching Windows Security
 events.
-
-This project focuses on depth over breadth: four phases, each fully built,
-documented, and backed by real command output and screenshots — rather than
-a longer list of partially finished phases.
 
 ## What this project demonstrates
 
