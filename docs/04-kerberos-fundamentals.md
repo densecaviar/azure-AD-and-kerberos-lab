@@ -126,9 +126,4 @@ that the interactive session needed to capture these tickets is complete.
 
 A real Kerberos TGT and service ticket were issued, observed with `klist`
 on win-client01, and correlated with Event IDs 4768 and 4769 on dc01,
-completing the legitimate authentication baseline that the Kerberoasting
-simulation in Phase 7 deliberately abuses. The temporary RDP access and
-public IP used to capture this evidence have been removed, restoring the
-lab's no-inbound-internet-access posture.
-
-**Next phase:** `05-splunk-deployment.md`
+completing the legitimate authentication.
