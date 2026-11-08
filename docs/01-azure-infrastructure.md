@@ -20,7 +20,7 @@ endpoints, and monitoring systems.
 resource in the lab, allowing the entire environment to be managed,
 monitored, and (if needed) torn down as a single unit.
 
-**Evidence:** 📸 `images/01-01-resource-group-created.png` — the resource
+**Evidence:**  ![resource group](images/01-01-resource-group-created.png) — the resource
 group's Overview blade immediately after creation.
 
 ## Step 2 — Create the virtual network and subnets
