@@ -34,7 +34,7 @@ Get-ADUser -Identity "alice" -Properties Enabled, PasswordLastSet | Select-Objec
 
 Confirms the account exists, is enabled, and has a password set.
 
-**Evidence:** 📸 `images/04-01-aduser-created.png`
+**Evidence:** ![user created](/images/04-01-aduser-created.png)
 
 ## Step 2 — Temporarily permit interactive logon
 
@@ -71,7 +71,7 @@ authenticated to the KDC and received a Ticket-Granting Ticket.
 
 **Result:** confirmed — a single cached ticket (`krbtgt/ENTERPRISE.LOCAL`) present immediately after login.
 
-**Evidence:** 📸 `images/04-02-klist-tgt.png`
+**Evidence:** ![klist command output](/images/04-02-klist-tgt.png)
 
 ## Step 4 — Trigger a service ticket request
 
@@ -90,7 +90,7 @@ service — this is the TGS/service ticket exchange in practice.
 
 **Result:** confirmed — a second cached ticket (`cifs/dc01.enterprise.local`) appeared following the network access, alongside the original TGT.
 
-**Evidence:** 📸 `images/04-03-klist-tgs.png`
+**Evidence:** 📸 ![klist ](/images/04-03-klist-tgs.png)
 
 ## Step 5 — Correlate with the Security event log on dc01
 
@@ -111,7 +111,8 @@ on top of.
 
 **Result:** confirmed — Event ID 4768 and Event ID 4769 both logged for account `alice`, with timestamps matching the TGT and service ticket captured in Steps 3 and 4.
 
-**Evidence:** 📸 `images/04-04-event-4768-4769.png`
+**Evidence:** 
+![Windows Event IDs](/images/04-04-event-4768-4769.png)
 
 ## Step 6 — Remove the temporary access
 
