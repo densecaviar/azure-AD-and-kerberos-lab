@@ -23,8 +23,7 @@ DNS, and Kerberos authentication services for the environment.
 | NIC network security group | None (relies on subnet-level `nsg-dc`) | avoids duplicate, overlapping rule sets |
 | Auto-shutdown | Enabled, daily | protects remaining Azure credit |
 
-**Evidence:** 📸 `images/02-01-dc01-create-review.png` — the Review + Create
-summary prior to deployment.
+
 
 ## Step 2 — Install the required Windows Server roles
 
@@ -108,12 +107,6 @@ IP4Address : 10.10.1.5
 The SRV record resolves correctly to dc01's static IP, confirming clients
 can locate this domain controller.
 
-**Evidence:**
-📸 `images/02-02-adds-forest-result.png` — Run Command output confirming
-the promotion succeeded.
-📸 `images/02-03-validation-output.png` — `Get-Service` and `Get-ADDomain`
-output.
-📸 `images/02-04-srv-record-resolved.png` — the SRV record output above.
 
 ## Outcome
 
